@@ -8,6 +8,7 @@ const WellcomePage = () => {
       <div className="content">
         <div className="photo">
           <div className="status-bar"></div>
+
           <div className="wellcome">
             <h1>Hello!</h1>
             <p>Wellcome to Bank App</p>
@@ -21,7 +22,7 @@ const WellcomePage = () => {
             Sing up
           </Link>
         </button>
-        <button>
+        <button type="submit">
           <Link className="button-in" to="./signin">
             Sing in
           </Link>

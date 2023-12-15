@@ -1,21 +1,20 @@
-import "./index.css";
 import Page from "../../component/page";
 import Status from "../../component/status";
 import Back from "../../component/back-button";
 import { Link } from "react-router-dom";
+import "./index.css";
 
-const RecoveryPage = () => {
+const SendPage = () => {
   return (
     <Page>
       <Status />
       <Back />
-      <div className="content-rec">
-        <div className="recovery">
-          <h1 className="title">Recover password</h1>
-          <p className="descr">Choose a registration method</p>
+      <div className="content-send">
+        <div className="sending">
+          <h1 className="title">Send</h1>
         </div>
 
-        <div className="action">
+        <div className="action-send">
           <div className="input">
             <span>Email</span>
             <input
@@ -23,6 +22,16 @@ const RecoveryPage = () => {
               placeholder="email"
               label="Email"
               type="email"
+            />
+          </div>
+
+          <div className="sum">
+            <span>Sum</span>
+            <input
+              className="input-send-sum"
+              placeholder="sum"
+              label="sum"
+              type="sum"
             />
           </div>
 
@@ -36,11 +45,10 @@ const RecoveryPage = () => {
         </div>
       </div>
 
-      <div className="indicator-rec">
+      <div className="indicator-send">
         <img src="/img/indicator.png" />
       </div>
     </Page>
   );
 };
-
-export default RecoveryPage;
+export default SendPage;

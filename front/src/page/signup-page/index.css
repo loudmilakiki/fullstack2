@@ -21,7 +21,6 @@
     font-size: 24px;
     font-weight: bold;
 }
-
 .descr {
     color: #939199;
     font-size: 18px;
@@ -66,7 +65,7 @@ gap: 12px;
 }
 
 .indicator-up {
-    padding-top: 160px;
+    padding-top: 120px;
 
 }
 
@@ -79,6 +78,22 @@ gap: 12px;
     padding: 10px;
 }
 
+.input-signup-email::placeholder {
+    color: gray;
+}
+
+.input-signup-email:hover {
+    border-color: gray;
+}
+
+.input-signup-email:focus {
+    border-color: orange;
+}
+
+.input-signup-email--error {
+    border-color: red;
+}
+
 .pass{
     display: flex;
     flex-direction: column;
@@ -87,8 +102,13 @@ gap: 12px;
 
 .account {
    padding-left: 8px;
+   text-decoration: none;
 }
 
+.account-link {
+    text-decoration: none;
+    color: white;
+}
 .input-signup-password {
      width: 100%;
     height: 54px;
@@ -98,14 +118,22 @@ gap: 12px;
     padding: 10px;
    
 }
+ 
+.mismatch {
+    color: #F2883D;
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
 
 .error {
-    display: grid;
-  
-    gap: 6px;
-    padding: 36px;
-    color: #F2883D;
-   
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 16px;
+
 }
 
 .danger {

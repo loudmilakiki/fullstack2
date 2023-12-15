@@ -39,11 +39,18 @@ const SigninPage = () => {
           <span className="simple">Sorry, the password is too simple</span>
 
           <span>
-            Forgot your password? <Link to="../signin/recovery">Restore</Link>
+            Forgot your password?{" "}
+            <Link className="click-in" to="../signin/recovery">
+              Restore
+            </Link>
           </span>
 
           <div className="buttons-in">
-            <button className="button-signin">Continue</button>
+            <button className="button-signin">
+              <Link className="click-rec" to="../signin/balance">
+                Continue
+              </Link>
+            </button>
           </div>
         </div>
       </div>
